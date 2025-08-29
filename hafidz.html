@@ -21,6 +21,7 @@
         -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     }
     </style>
+    <script src="main.js"></script>
 
 
 </head>
@@ -165,7 +166,7 @@
         <h2 class="text-xl font-bold mb-3">Skills</h2>
         <div class="grid grid-cols-3 sm:grid-cols-5 gap-6">
             <div class="flex bg-white p-3 w-[150px] h-[150px] flex-col items-center">
-            <img src="asset/html_logo.png" alt="HTML" class="w-16 h-16 object-contain">
+            <img src="/assets/html_logo.png" alt="HTML" class="w-16 h-16 object-contain">
             <p class="mt-2 text-sm font-medium">HTML</p>
             </div>
             <div class="flex flex-col items-center">
@@ -199,29 +200,7 @@
     </div>
     </section>
 
-<script>
-  // Toggle menu di mobile
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-    });
-    function showTab(tab) {
-    // sembunyikan semua
-    document.querySelectorAll(".tab-content").forEach(el => el.classList.add("hidden"));
-    // tampilkan yang dipilih
-    document.getElementById(tab).classList.remove("hidden");
-
-    // reset style button
-    document.querySelectorAll("button").forEach(btn => btn.classList.remove("text-black","border-yellow-400"));
-    // aktifkan button terpilih
-    document.getElementById("btn-" + tab).classList.add("text-black","border-yellow-400");
-  }
-
-  // default tampil Skills
-  showTab('skills');
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
